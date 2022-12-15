@@ -240,7 +240,8 @@ header a {
     color: inherit;
 }
 
-header a:hover {
+header a:hover,
+header a:active {
     text-decoration: none;
 }
 
