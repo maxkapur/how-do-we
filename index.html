@@ -11,11 +11,13 @@
     <meta name="author" content="Max Kapur">
     <meta property="og:image" content="naju-full.jpg">
 
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px)" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 799px)" href="mobile.css" />
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-    <title>How do we learn what’s true?</title>
+    <script src="./script.js" defer></script>
+
+    <title>How do we learn what’s true?</title>    
 </head>
 
 <body>
@@ -25,30 +27,38 @@
     </header>
 
     <div class="sidebar">
-        <div id="navi">
-            <ul id="navilist">
-                <li class="current"><a href="index.html">About this Site</a></li>
-                <li><a href="1.html">Korea’s Version of the <span style="white-space: nowrap;">Alt-Right</span></a>
-                </li>
-                <li><a href="2.html">Thesis Statement</a></li>
-                <li><a href="3.html">Narrative Fluency in K–&zwj;12&nbsp;Education</a></li>
-                <ul>
-                    <li><a href="3.html#3a">Media Literacy</a></li>
-                    <li><a href="3.html#3b">Critical Thinking</a></li>
+        <button id="sidebaropener" onclick="toggleSidebarHidden()">
+            Show navigation
+        </button>
+        <div class="container">
+            <div id="navi">
+                <ul id="navilist">
+                    <li class="current"><a href="index.html">About this Site</a></li>
+                    <li><a href="1.html">Korea’s Version of the <span style="white-space: nowrap;">Alt-Right</span></a>
+                    </li>
+                    <li><a href="2.html">Thesis Statement</a></li>
+                    <li><a href="3.html">Narrative Fluency in K–&zwj;12&nbsp;Education</a>
+                        <ul>
+                            <li><a href="3.html#3a">Media Literacy</a></li>
+                            <li><a href="3.html#3b">Critical Thinking</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="4.html">Narrative Fluency in Higher Education</a>
+                        <ul>
+                            <li><a href="4.html#4a">Specialization</a></li>
+                            <li><a href="4.html#4b">Public Scholarship</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="5.html">The Limits of Narrative Fluency</a></li>
+                    <li><a href="6.html">References</a></li>
                 </ul>
-                <li><a href="4.html">Narrative Fluency in Higher Education</a></li>
-                <ul>
-                    <li><a href="4.html#4a">Specialization</a></li>
-                    <li><a href="4.html#4b">Public Scholarship</a></li>
-                </ul>
-                <li><a href="5.html">The Limits of Narrative Fluency</a></li>
-                <li><a href="6.html">References</a></li>
-            </ul>
+            </div>
+
+            <footer><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img
+                        alt="Creative Commons License" style="border-width:0"
+                        src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" /></a>&nbsp;<br />Sponsored by nobody;
+                I just like writing. Check out <a href="https://www.maxkapur.com">maxkapur.com</a>.</footer>
         </div>
-        <footer><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img
-                    alt="Creative Commons License" style="border-width:0"
-                    src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" /></a>&nbsp;<br />Sponsored by nobody;
-            I just like writing. Check out <a href="https://www.maxkapur.com">maxkapur.com</a>.</footer>
     </div>
     <main>
         <article>
@@ -72,6 +82,26 @@
                 or mistakes, or just to say hi.</p>
             <p>Press Next below to begin reading.</p>
 
+            <h3>Update: December 2022</h3>
+            <p>
+                After finishing grad school, I decided to relearn frontend web dev the &ldquo;right way,&rdquo;and have worked my
+                way through most of the lessons <a href="https://www.theodinproject.com/dashboard">The Odin Project</a>.
+                I undertook a major rewrite of the CSS for this site, which uses a proper grid layout with sticky
+                positioning. The appearance should now be essentially the same as the original, but with greater consistency
+                across browsers and faster load times.
+            </p>
+            <p>
+                I <em>think</em> this rewrite will fix a bunch of bugs, but I probably introduced some new ones in the process,
+                so let me know.
+            </p>
+            <!-- <p>
+                Of course, as I redid the CSS, I found myself rereading the essay as well, and it&rsquo;s hard to say that my words
+                have aged well. &ldquo;How do we learn what&rsquo;s true?&rsquo; is an artifact of a particular cultural moment, in 
+                debates over the status of &ldquo;truth&rdquo; felt worthwhile and even urgent. In hindsight, that half-decade in
+                which all of us roleplayed as epistemological philosophers was a bit quaint, wasn&rsquo;t it? Perhaps the silver lining
+                of 2020, 2021, and 2022 is that we all got to explore the world beyond the high pedestal of meta. 
+            </p> -->
+
         </article>
 
         <div id="bnavi">
@@ -79,12 +109,6 @@
             <div class="next"><a href="1.html">Next &rArr;</a></div>
         </div>
     </main>
-
-    <!--     
-    
-<input id="menuopener" type="checkbox" />
-    <label for="menuopener"><div id="menuopenerbox">Navigation <span id="open">&darr;</span><span id="closed">&rarr;</span>
-</div></label> -->
 
 </body>
 

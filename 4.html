@@ -11,9 +11,11 @@
     <meta name="author" content="Max Kapur">
     <meta property="og:image" content="naju-full.jpg">
 
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px)" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 799px)" href="mobile.css" />
     <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+    <script src="./script.js" defer></script>
 
     <title>Narrative Fluency in Higher Education</title>
 </head>
@@ -25,21 +27,29 @@
         <h2>Narrative fluency and the pedagogy of information</h2>
     </header>
     <div class="sidebar">
+        <button id="sidebaropener" onclick="toggleSidebarHidden()">
+            Show navigation
+        </button>
+        <div class="container">
+
         <div id="navi">
             <ul id="navilist">
                 <li><a href="index.html">About this Site</a></li>
-                <li><a href="1.html">Korea’s Version of the <span style="white-space: nowrap;">Alt-Right</span></a></li>
+                <li><a href="1.html">Korea’s Version of the <span style="white-space: nowrap;">Alt-Right</span></a>
+                </li>
                 <li><a href="2.html">Thesis Statement</a></li>
-                <li><a href="3.html">Narrative Fluency in K–&zwj;12&nbsp;Education</a></li>
-                <ul>
-                    <li><a href="3.html#3a">Media Literacy</a></li>
-                    <li><a href="3.html#3b">Critical Thinking</a></li>
-                </ul>
-                <li class="current"><a href="4.html">Narrative Fluency in Higher Education</a></li>
-                <ul>
-                    <li class="current"><a href="#4a">Specialization</a></li>
-                    <li class="current"><a href="#4b">Public Scholarship</a></li>
-                </ul>
+                <li><a href="3.html">Narrative Fluency in K–&zwj;12&nbsp;Education</a>
+                    <ul>
+                        <li><a href="3.html#3a">Media Literacy</a></li>
+                        <li><a href="3.html#3b">Critical Thinking</a></li>
+                    </ul>
+                </li>
+                <li class="current"><a href="4.html">Narrative Fluency in Higher Education</a>
+                    <ul>
+                        <li><a href="4.html#4a">Specialization</a></li>
+                        <li><a href="4.html#4b">Public Scholarship</a></li>
+                    </ul>
+                </li>
                 <li><a href="5.html">The Limits of Narrative Fluency</a></li>
                 <li><a href="6.html">References</a></li>
             </ul>
@@ -50,11 +60,10 @@
                     src="https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png" /></a>&nbsp;<br />Sponsored by nobody; I
             just like writing. Check out <a href="https://www.maxkapur.com">maxkapur.com</a>.</footer>
 
+        </div>
     </div>
     <main>
         <article>
-
-
             <h2>
                 Narrative Fluency in Higher Education
             </h2>
@@ -86,9 +95,9 @@
 
 
 
-            <h4 id="4a">
+            <h3 id="4a">
                 Specialization
-            </h4>
+            </h3>
             <p>
                 Each fall, the various academic fields bear a new crop of
                 … subfields. I remember premed students at my undergrad enumerating the pros
@@ -162,9 +171,9 @@
 
 
 
-            <h4 id="4b">
+            <h3 id="4b">
                 Public Scholarship
-            </h4>
+            </h3>
             <p>
                 Historians’ use of technology to upgrade their field’s popular
                 standing exemplifies a push for public scholarship across all disciplines. Against
