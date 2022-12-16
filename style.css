@@ -59,7 +59,7 @@ footer {
     position: sticky;
     top: 0;
     bottom: 0;
-    
+
     display: grid;
     height: 100vh;
     grid-template-columns: auto;
@@ -67,24 +67,24 @@ footer {
 }
 
 /* Hide the menu opener, which appears only in mobile view */
-#sidebaropener {
+#sidebar-opener {
     display: none;
 }
 
-#navilist li {
+.sidebar nav>ul li {
     list-style-type: none;
     margin: 10px 0;
     padding: 5px 10px;
     font-weight: bold;
 }
 
-#navilist li li {
+.sidebar nav>ul li li {
     margin: 5px 0;
     padding: 0 20px;
     font-weight: normal;
 }
 
-#navilist .current {
+.sidebar nav>ul .current {
     background-color: var(--paper);
     color: var(--navy);
 }
@@ -132,10 +132,6 @@ article>p {
 article>h2+p,
 article>p.st+p,
 article>h3+p,
-article>h4+p,
-article>blockquote p:first-child,
-article>blockquote+p,
-article>p.first,
 article>h3+.image+p {
     text-indent: 0em;
 }
@@ -208,7 +204,7 @@ article .bib>p {
     margin: 1em 0 0 1.5em;
 }
 
-#bnavi {
+nav.prev-next {
     display: flex;
     justify-content: space-between;
     background-color: var(--dark);
@@ -222,7 +218,7 @@ article .bib>p {
 
 /* Links */
 
-#navi a {
+nav a {
     color: inherit;
 }
 
@@ -254,6 +250,6 @@ footer a {
     color: var(--lightaccent);
 }
 
-#bnavi a {
+nav.prev-next a {
     color: inherit;
 }

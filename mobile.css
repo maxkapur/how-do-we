@@ -6,7 +6,7 @@ header {
     padding: 20px;
 }
 
-#sidebaropener {
+#sidebar-opener {
     display: block;
     border: none;
     width: 100%;
@@ -14,7 +14,7 @@ header {
     border-bottom: 1px solid var(--paper);
     background-color: var(--navy);
     color: var(--light);
-    font-size: 1rem;
+    font-size: inherit;
     font-family: var(--sansfont);
 }
 
@@ -29,7 +29,7 @@ header {
     display: none;
 }
 
-#navilist li {
+.sidebar nav>ul li {
     margin: 5px 0;
     padding: 5px 10px;
 }
