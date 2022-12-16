@@ -1,11 +1,19 @@
+const sidebar = document.querySelector(".sidebar .container");
+const button = document.getElementById("sidebar-opener");
+
 function toggleSidebarHidden() {
-    sidebar = document.querySelector(".sidebar .container");
-    button = document.getElementById("sidebar-opener");
-    if (sidebar.style.display == "block") {
+    if (sidebar.style.display == "grid") {
         button.innerText = "Show navigation";
         sidebar.style.display = "none";
     } else {
         button.innerText = "Hide navigation";
-        sidebar.style.display = "block";
+        sidebar.style.display = "grid";
     }
 };
+
+window.onresize = () => {
+    if (window.matchMedia('(min-width: 800px)')) {
+        button.innerText = "Hide navigation";
+        sidebar.style.display = "grid";
+    }
+}
