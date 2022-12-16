@@ -41,6 +41,9 @@ header {
 
 footer {
     position: static;
+    border-top: 1px solid var(--paper);
+    padding-bottom: 5px;
+    gap: 5px;
 }
 
 article {
