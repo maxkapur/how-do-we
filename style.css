@@ -165,11 +165,29 @@ article>h3+.image+p {
     background-color: var(--paper);
 }
 
+.image .placeholder {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    background: var(--darkaccent);
+    background: linear-gradient(310deg,
+            var(--navy) 0%,
+            var(--darkaccent) 100%);
+}
+
+.image .placeholder>div {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border: 1px dashed var(--light);
+}
+
 .image .caption {
     padding: 10px;
 }
 
-.image p.attrib {
+.image .caption p.attrib {
     font-size: 0.8rem;
     margin-top: 0.3em;
 }
