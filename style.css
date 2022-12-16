@@ -142,6 +142,9 @@ article>h3+.image+p {
     color: var(--light);
     margin: 10px -40px 10px 10px;
     max-width: 400px;
+
+    font-family: var(--sansfont);
+    font-size: 0.9rem;
 }
 
 .image img,
@@ -162,17 +165,13 @@ article>h3+.image+p {
     background-color: var(--paper);
 }
 
-.image p {
-    text-indent: 0;
-    margin: 0;
-    padding: 8px;
-    font-family: var(--sansfont);
-    font-size: .8em;
+.image .caption {
+    padding: 10px;
 }
 
-.image p>span {
-    display: block;
-    font-size: .8em;
+.image p.attrib {
+    font-size: 0.8rem;
+    margin-top: 0.3em;
 }
 
 article sup {
